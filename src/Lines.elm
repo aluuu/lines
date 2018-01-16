@@ -466,9 +466,6 @@ viewCustom config lines =
       List.concat
         [ config.attributes
         , Events.toAttributes safeDataPoints system config.events
-        , [ Attributes.width <| toString system.frame.size.width
-          , Attributes.height <| toString system.frame.size.height
-          ]
         ]
 
     viewLines =
